@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Quam Life</title>
+    <style>
+      body{
+        margin: 5%;
+        text-align: center;
+        font-size: 40px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Quam</h1>
+    <div>
+      <h1>Quam</h1>
+    </div>
+    <script>
+      var div = document.querySelector("div");
+      var x = 0;
+
+      setInterval(function(){
+        x++;
+        div.style.transform = 'rotate(' + x + 'deg)';
+      }, 10);
+    </script>
   </body>
 </html>
